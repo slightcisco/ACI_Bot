@@ -305,7 +305,7 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{host_ip_addr}}"
+      message: "Host IP: {{host_ip_addr}}"
 
   - name: message - ACI Tenant Name
     cisco_spark:
@@ -313,7 +313,7 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{host_tn_name}}"
+      message: "Tenant Name: {{host_tn_name}}"
 
   - name: message - ACI Application Profile Name
     cisco_spark:
@@ -321,7 +321,7 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{host_ap_name}}"
+      message: "Application Profile Name: {{host_ap_name}}"
 
   - name: message - EPG to which Host Belongs
     cisco_spark:
@@ -329,7 +329,7 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{host_epg_name}}"
+      message: "EPG that the host belongs to: {{host_epg_name}}"
 
   - name: message - Provided Subjects and Filters
     cisco_spark:
@@ -337,7 +337,7 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{prov_subj_flt_summary_list_with_headers_list}}"
+      message: "Provided Subjest and Filters: {{prov_subj_flt_summary_list_with_headers_list}}"
 
   - name: message - Consumed Subjects and Filters
     cisco_spark:
@@ -345,7 +345,7 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{cons_subj_flt_summary_list_with_headers_list}}"
+      message: "Consumed Subjests and Filters: {{cons_subj_flt_summary_list_with_headers_list}}"
 
   - name: message - IP Addresses Associated with host EPG
     cisco_spark:
@@ -353,5 +353,5 @@
       recipient_id: "{{RoomId}}"
       message_type: text
       personal_token: "{{bot_token}}"
-      message: "{{ip_addresses_list}}"
+      message: "IP Addresses Assoiciated with EPG: {{ip_addresses_list}}"
 
