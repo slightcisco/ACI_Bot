@@ -8,9 +8,9 @@
       host:           "apic-01.uktme.cisco.com"
       username:       "{{ apic_username }}"
       password:       "{{ apic_password }}"
-      bot_token:      "ZmYwMjRmYjEtNWM4ZC00NGQ0LTk3NmMtNTZhZDE1ZmM0OTc4ZDEzMTk4OWUtMDhj_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
-      host_ip_addr:   "DEFAULT_VALUE"
-      RoomId:         "DEFUALT_VALUE"
+    bot_token:      "ZmYwMjRmYjEtNWM4ZC00NGQ0LTk3NmMtNTZhZDE1ZmM0OTc4ZDEzMTk4OWUtMDhj_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+    host_ip_addr:   "DEFAULT_VALUE"
+    RoomId:         "DEFUALT_VALUE"
     output_headers  :
     - 'Tenant  '
     - 'Contract'
