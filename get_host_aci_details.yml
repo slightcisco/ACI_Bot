@@ -17,7 +17,6 @@
     - 'Subject '
     - 'Filter  '
     debug_on_state:   "{{ debug_on | default(false) }}"
-    - name:           "host_ip_addr"
 
   tasks:
 
