@@ -297,7 +297,7 @@
   - name:             Consumed Subjects and Filters
     debug:            msg="{{ cons_subj_flt_summary_list_with_headers_list }}"
   - name:             IP Addresses Associated with host EPG
-    debug:            msg="{{ ip_addresses_list }}"---
+    debug:            msg="{{ ip_addresses_list }}"
 
   - name: message - Host IP
     cisco_spark:
@@ -308,7 +308,7 @@
       message: "{{host_ip_addr}}"
 
 - name: message - ACI Tenant Name
-    cisco_spark:
+  cisco_spark:
       recipient_type: roomId
       recipient_id: "{{RoomId}}"
       message_type: text
@@ -316,7 +316,7 @@
       message: "{{host_tn_name}}"
 
 - name: message - ACI Application Profile Name
-    cisco_spark:
+  cisco_spark:
       recipient_type: roomId
       recipient_id: "{{RoomId}}"
       message_type: text
@@ -324,7 +324,7 @@
       message: "{{host_ap_name}}"
 
 - name: message - EPG to which Host Belongs
-    cisco_spark:
+  cisco_spark:
       recipient_type: roomId
       recipient_id: "{{RoomId}}"
       message_type: text
@@ -332,7 +332,7 @@
       message: "{{host_epg_name}}"
 
 - name: message - Provided Subjects and Filters
-    cisco_spark:
+  cisco_spark:
       recipient_type: roomId
       recipient_id: "{{RoomId}}"
       message_type: text
@@ -340,7 +340,7 @@
       message: "{{prov_subj_flt_summary_list_with_headers_list}}"
 
 - name: message - Consumed Subjects and Filters
-    cisco_spark:
+  cisco_spark:
       recipient_type: roomId
       recipient_id: "{{RoomId}}"
       message_type: text
@@ -348,7 +348,7 @@
       message: "{{cons_subj_flt_summary_list_with_headers_list}}"
 
 - name: message - IP Addresses Associated with host EPG
-    cisco_spark:
+  cisco_spark:
       recipient_type: roomId
       recipient_id: "{{RoomId}}"
       message_type: text
